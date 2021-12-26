@@ -17,11 +17,15 @@
   to leave the waiting room and disconnect from the server.
   By clicking the PLAY button, the server starts to find you an opponent to play with. This might take a few seconds. If there are no users available to play, 
   a message appears under the Play button to inform you about it, otherwise you'll be redirected to the Playing room and the game will automatically start.
+  
   NOTE!! You cannot directly choose the opponent to play with!!!
+  
   The Playing room shows your and the opponent's username and both of your current score in points. The question to be answered and the four answers to choose from
   is shown at the center of the window. There's ALWAYS 1 CORRECT ANSWER. Time limit: 20 seconds / question.
   After clicking one of the answers, the server checks if the opponent has already answered. If so, you will see your opponent's answer and of course, the correct answer.
+  
   NOTE! Depending on the difficulty of the question it'll be added one or two points if you have answered correctly.
+  
   After the game is over, you'll se the result and you can get back to the waiting room.
   
   
