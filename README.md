@@ -1,5 +1,12 @@
 # TCPQuizClient written in Python (PyQT5)
 
+## How to use
+
+1. Download the TCPQuizClient.zip file and extract the files from it. (contains 2 files)
+2. Open the network_config.ini file with a text editor and replace the IP address (127.0.0.1) with the address you get from me! :)
+![image](https://user-images.githubusercontent.com/93404199/147420079-ea9aea8a-836a-4a7b-922f-491b46c2a69a.png)
+3. Save the .ini file, close it and start the TCPQuizClient.exe file
+
 ## Description:
 
   The application can be used for playing a REAL-TIME multiple-choice quiz game with another user.
