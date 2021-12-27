@@ -32,6 +32,6 @@
   
   
   # Screenshots
-  ![image](https://user-images.githubusercontent.com/93404199/147491771-f5f9075e-530c-4b9a-a382-06ca8da979f6.png) ![image](https://user-images.githubusercontent.com/93404199/147492004-b80dcd9a-90c1-42a8-a83e-98d5374d3bf1.png)
-
+  <img src="https://user-images.githubusercontent.com/93404199/147491771-f5f9075e-530c-4b9a-a382-06ca8da979f6.png" width=50% height=50%>
+  <img src="https://user-images.githubusercontent.com/93404199/147492004-b80dcd9a-90c1-42a8-a83e-98d5374d3bf1.png" width=50% height=50%>
 
