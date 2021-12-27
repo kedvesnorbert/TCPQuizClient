@@ -10,7 +10,9 @@
 ## Description:
 
   The application can be used for playing a REAL-TIME multiple-choice quiz game with another user.
-  The TCP Quiz server must be running and must accept the clients.
+  
+  The TCP Quiz server must be running and must accept the clients. Link to TCP quiz server: https://github.com/kedvesnorbert/TCPQuizServer
+  
   
   First of all, a login with username and password is required. After a successful login, the user is redirected to the waiting room
   where a list of connected clients are shown at the left side. Also on the right side is a PLAY button to start a new game and a DISCONNECT button
