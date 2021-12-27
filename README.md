@@ -31,4 +31,6 @@
   After the game is over, you'll se the result and you can get back to the waiting room.
   
   
-  
+  # Screenshots
+  ![image](https://user-images.githubusercontent.com/93404199/147491771-f5f9075e-530c-4b9a-a382-06ca8da979f6.png)
+
