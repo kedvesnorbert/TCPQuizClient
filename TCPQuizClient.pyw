@@ -113,9 +113,26 @@ class LoginWindow(QWidget):
         self.login_pw.setEchoMode(QLineEdit.Password)
         self.login_pw.setPlaceholderText("Enter password")
         self.login_pw.setStyleSheet(
-            "color:white;font-size:13pt;background-color:transparent;width:100px;height:60px;border:none;border-bottom:3px solid black;")
+            "color:white;font-size:13pt;background-color:transparent;width:100px;height:60px;border:none;\
+                border-bottom:3px solid black;margin-bottom:20px;")
         self.login_pw.returnPressed.connect(self.start_connecting)
         self.loginlayout.addWidget(self.login_pw)
+
+        self.conditionlayout = QHBoxLayout()
+        self.conditionlayout.setAlignment(Qt.AlignLeft)
+        self.loginlayout.addLayout(self.conditionlayout)
+        self.acceptconditions = QCheckBox()
+        self.acceptconditions.setStyleSheet(
+            "QCheckBox::indicator" "{" "width :35px;" "height : 35px;" "};")
+
+        self.conditiontext = QLabel(
+            "I agree to have my IP address visible to the server!")
+        self.conditiontext.setAlignment(Qt.AlignLeft)
+        self.conditiontext.setStyleSheet(
+            "font-size:16px;color:white;margin-top:10px;")
+
+        self.conditionlayout.addWidget(self.acceptconditions)
+        self.conditionlayout.addWidget(self.conditiontext)
 
         self.login_btn = QPushButton('CONNECT')
         self.login_btn.setFixedWidth(450)
@@ -129,7 +146,7 @@ class LoginWindow(QWidget):
         self.login_errmsg.setFixedWidth(450)
         self.login_errmsg.setWordWrap(True)
         self.login_errmsg.setStyleSheet(
-            "color:white;font-size:13pt;margin-top:20px;margin-bottom:20px;text-align:center")
+            "color:white;font-size:13pt;margin-top:10px;margin-bottom:20px;text-align:center")
 
         self.loginlayout.addWidget(self.login_errmsg)
         self.setLayout(self.loginlayout)
@@ -147,6 +164,11 @@ class LoginWindow(QWidget):
         return self.login_errmsg
 
     def connect_to_server(self):
+        if self.acceptconditions.isChecked() == False:
+            loginW.getLoginErrorMsg().setText(
+                "A folytatáshoz el kell fogadni a felhasználási feltételeket!\nPlease accept the terms and conditions!")
+            return
+
         loginW.getLoginBtn().setEnabled(False)
         loginW.getLoginErrorMsg().setText("LOADING ...\n")
         try:
